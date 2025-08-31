@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import Image from "next/image";
 import Link from "next/link";
 

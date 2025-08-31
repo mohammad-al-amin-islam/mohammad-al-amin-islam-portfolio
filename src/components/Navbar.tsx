@@ -17,34 +17,52 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="font-medium text-lg tracking-tight hover:text-muted-foreground transition-colors">
+            <Link
+              href="/"
+              className="font-medium text-lg tracking-tight hover:text-muted-foreground transition-colors"
+            >
               Al Amin
             </Link>
           </div>
-          
+
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+            <Link
+              href="/"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
               <span>Home</span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground group-hover:w-full transition-all duration-300"></div>
             </Link>
-            <Link href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+            <Link
+              href="#about"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
               <span>About</span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground group-hover:w-full transition-all duration-300"></div>
             </Link>
-            <Link href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+            <Link
+              href="#experience"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
               <span>Experience</span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground group-hover:w-full transition-all duration-300"></div>
             </Link>
-            <Link href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+            <Link
+              href="#projects"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
               <span>Projects</span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground group-hover:w-full transition-all duration-300"></div>
             </Link>
-            <Link href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+            <Link
+              href="#contact"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
               <span>Contact</span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground group-hover:w-full transition-all duration-300"></div>
             </Link>
-            
+
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -52,23 +70,59 @@ const Navbar = () => {
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
                 </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
                 </svg>
               )}
             </button>
-            
-            <a 
-              href="/Resume-Al-Amin.pdf" 
-              target="_blank" 
+
+            {/* Resume with Download Icon */}
+            <a
+              href="/Resume-Al-Amin.pdf"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-foreground border border-border rounded-lg px-4 py-2 hover:bg-accent transition-all duration-300 hover:border-foreground/20"
+              className="flex items-center gap-2 text-sm font-medium text-foreground border border-border rounded-lg px-4 py-2 hover:bg-accent transition-all duration-300 hover:border-foreground/20"
             >
               Resume
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+                />
+              </svg>
+              
             </a>
           </nav>
 
@@ -81,16 +135,36 @@ const Navbar = () => {
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
                 </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
                 </svg>
               )}
             </button>
-            
+
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300"
@@ -106,7 +180,12 @@ const Navbar = () => {
                 stroke="currentColor"
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
               {/* Icon for X */}
               <svg
@@ -117,7 +196,12 @@ const Navbar = () => {
                 stroke="currentColor"
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -125,7 +209,11 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden border-t border-border bg-background/95 backdrop-blur-sm`}>
+      <div
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:hidden border-t border-border bg-background/95 backdrop-blur-sm`}
+      >
         <div className="px-6 py-4 space-y-3">
           <Link
             href="/"
@@ -166,10 +254,25 @@ const Navbar = () => {
             href="/Resume-Al-Amin.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="block text-sm font-medium text-foreground border border-border rounded-lg px-4 py-2 hover:bg-accent transition-all duration-300 hover:border-foreground/20"
+            className="flex items-center gap-2 text-sm font-medium text-foreground border border-border rounded-lg px-4 py-2 hover:bg-accent transition-all duration-300 hover:border-foreground/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+              />
+            </svg>
+            
           </a>
         </div>
       </div>
@@ -177,4 +280,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

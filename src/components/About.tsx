@@ -5,9 +5,9 @@ const About = () => {
       icon: "🎨",
       skills: [
         "React/Next.js",
-        "TypeScript",
+        "TypeScript/JavaScript",
         "TailwindCSS",
-        "Redux",
+        "Redux/Zustund",
         "Tanstack Query",
       ],
       description: "Building responsive and interactive user interfaces",
@@ -27,7 +27,7 @@ const About = () => {
     {
       title: "Tools",
       icon: "🛠️",
-      skills: ["Git/GitHub", "VS Code", "Figma", "Vercel", "Firebase"],
+      skills: ["Git/GitHub", "VS Code/Cursor", "Figma", "Vercel", "Sentry", "Linear"],
       description: "Mastering development tools and platforms",
     },
     {
