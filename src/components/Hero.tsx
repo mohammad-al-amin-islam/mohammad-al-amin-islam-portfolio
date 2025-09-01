@@ -3,15 +3,15 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-background to-muted/10"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.02),transparent_50%)]"></div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-2 h-2 bg-muted-foreground/20 rounded-full animate-pulse"></div>
+      {/* <div className="absolute top-20 left-10 w-2 h-2 bg-muted-foreground/20 rounded-full animate-pulse"></div>
       <div className="absolute top-40 right-20 w-1 h-1 bg-muted-foreground/30 rounded-full animate-pulse delay-1000"></div>
-      <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-muted-foreground/20 rounded-full animate-pulse delay-500"></div>
+      <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-muted-foreground/20 rounded-full animate-pulse delay-500"></div> */}
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ">

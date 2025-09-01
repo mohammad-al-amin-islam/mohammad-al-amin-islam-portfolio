@@ -28,7 +28,7 @@ const Navbar = () => {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="/"
+              href="#home"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               <span>Home</span>
@@ -66,7 +66,7 @@ const Navbar = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300"
+              className="p-2 rounded-lg text-muted-foreground cursor-pointer hover:text-foreground hover:bg-accent transition-all duration-300"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
